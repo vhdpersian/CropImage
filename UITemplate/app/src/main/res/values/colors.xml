@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white"> #fff </color>
+    <color name="deal_text_gray">#ff323232</color>
+    <color name="deal_seperator_gray">#fff1f1f1</color>
+    <color name="deal_orgprice_bg_gray">#ffeeeeee</color>
+    <color name="green">#ff3c9f15</color>
+    <color name="orange">#fff58220</color>
+    <color name="deal_bread_crumb_bg">#ffe6e7e8</color>
+    <color name="activity_bg_gray">#ffdddddd</color>
+</resources>

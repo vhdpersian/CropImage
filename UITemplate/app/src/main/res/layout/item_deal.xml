@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10.0dip"
+    android:paddingLeft="12.0dip"
+    android:paddingRight="12.0dip"
+    android:paddingTop="10.0dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip">
+
+            <ImageView
+                android:id="@+id/imgDealImage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/deal_placeholder" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/txtDealName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="3.0dip"
+                android:gravity="right"
+                android:lineSpacingExtra="3.0dip"
+                android:padding="3.0dip"
+                android:text="عنوان"
+                android:textColor="@color/deal_text_gray"
+                android:textDirection="rtl"
+                android:textSize="17.0sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:adjustViewBounds="true"
+            android:src="@color/deal_seperator_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:background="@color/deal_orgprice_bg_gray"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/txtOriginalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:gravity="center"
+                android:text="قیمت تخفیف"
+                android:textColor="@color/deal_text_gray"
+                android:textSize="13.0sp" />
+
+            <TextView
+                android:id="@+id/txtDiscountPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="8.0"
+                android:background="@color/white"
+                android:gravity="center|right"
+                android:paddingRight="8.0dip"
+                android:text="قیمت اصلی"
+                android:textColor="@color/deal_text_gray"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="6.0dip"
+                android:layout_height="fill_parent"
+                android:adjustViewBounds="true"
+                android:src="@color/green" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:adjustViewBounds="true"
+            android:src="@color/deal_seperator_gray" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtDiscountPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/orange"
+                android:gravity="center_vertical"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:text="درصد"
+                android:textColor="@color/white"
+                android:textSize="17.0sp" />
+
+            <TextView
+                android:id="@+id/txtTotalPurchased"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5.0dip"
+                android:gravity="center"
+                android:text="تعداد خرید"
+                android:textColor="@color/deal_text_gray"
+                android:textDirection="rtl"
+                android:textSize="14.0sp" />
+
+            <ImageView
+                android:id="@+id/imgTri"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/txtDiscountPercentage"
+                android:adjustViewBounds="true"
+                android:src="@drawable/triangle_left" />
+
+            <TextView
+                android:id="@+id/txtState"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="6.0dip"
+                android:layout_toLeftOf="@id/imgTri"
+                android:layout_toRightOf="@id/txtTotalPurchased"
+                android:gravity="center|right"
+                android:text="محل"
+                android:textColor="@color/deal_text_gray"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
